@@ -1,11 +1,11 @@
-![ATRI.jpg](img%2FATRI.jpg)
+<img src="img/Atri.png" alt="ATRI 图片" style="width: 600px;">
 
 ---
 ## 简介
 简体中文 · [English](./README_EN.md) 
 - My Dream Moments 是一个基于大型语言模型（LLM）的情感陪伴程序，能够接入微信，提供更真实的情感交互体验。内置了 Atri-My dear moments 的 prompt，并且解决了传统人机对话程序一问一答的死板效果，提供沉浸式角色扮演和多轮对话支持。项目名字来源是运行在该程序上的第一个智能体的原作名称+项目价值观混合而来。
 - 推荐使用DeepSeek V3 模型。<br>
-![demo.png](img%2Fdemo.png)
+<img src="img/Demo.png" alt="Demo 图片" width="500">
 ---
 ## 声明
 - 本项目仅用于交流学习，LLM发言不代表作者本人立场。prompt所模仿角色版权归属原作者。任何未经许可进行的限制级行为均由使用者个人承担。
@@ -33,3 +33,13 @@
 ## 如何运行项目
 
 参考 [FloraBot官方文档](https://florabotteam.github.io/)
+
+## 赞助
+此项目欢迎赞助。您的支持对我非常重要！
+- 赞助用户如需远程部署或定制 prompt，请联系我。
+- E-Mail: yangchenglin2004@foxmail.com 
+- Bilibili: [umaru今天吃什么](https://space.bilibili.com/209397245)
+- 感谢您的支持与使用！!
+
+## 请给我Star，这对我很重要TvT
+- [![Star History Chart](https://api.star-history.com/svg?repos=umaru-233/My-Dream-Moments&type=Timeline)](https://star-history.com/?spm=a2c6h.12873639.article-detail.8.7b9d359dJmTgdE#umaru-233/My-Dream-Moments&Timeline)
