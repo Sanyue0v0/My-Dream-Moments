@@ -11,17 +11,20 @@
     "DeepSeekModel": "deepseek-ai/DeepSeek-V3",
     "DeepSeekMaxToken": 2000,
     "DeepSeekTemperature": 1.2,
+    "Gemini":false,
+    "QWeather":false,
+    "QWeatherApiKey": "",
 
     "Help": [
         {
             "Class": "Atri",
             "Commands": [
                 {
-                    "Command": "/Atri + [空格] + [内容]",
+                    "Command": "Atri + [空格] + [内容]",
                     "Content": "与 Atri 进行聊天"
                 },
                 {
-                    "Command": "/Atri新的会话",
+                    "Command": "Atri新的会话",
                     "Content": "清除 Atri 的聊天记录, 开始新的会话"
                 }
             ]
@@ -31,7 +34,7 @@
             "AdminUse": true,
             "Commands": [
                 {
-                    "Command": "/DeepSeekApiKey + [空格] + [ApiKey]",
+                    "Command": "DeepSeekApiKey + [空格] + [ApiKey]",
                     "Content": "设置 DeepSeek 的 ApiKey(警告: ApiKey 是很重要的东西, 请不要在群聊内设置 ApiKey, 发在群聊内可能会被他人恶意利用!!!)"
                 }
             ]

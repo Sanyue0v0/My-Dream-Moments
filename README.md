@@ -32,43 +32,4 @@
 
 ## 如何运行项目
 
-### 1. 前期准备
-1. **备用手机/安卓模拟器**  
-   - 微信电脑端登录必须有一个移动设备同时登录，因此不能使用您的主要设备。
-   
-2. **微信小号**  
-   - 需要注册时间较久的微信号（新注册的账号可能无法登录为 bot）。如果扫码后报错，请检查此项。
-
-3. **DeepSeek API Key**  
-   - 推荐使用：[获取 API Key（15元免费额度）](https://cloud.siliconflow.cn/i/aQXU6eC5)
-
----
-
-### 2. 部署项目
-1. **克隆本仓库**  
-   ```bash
-   git clone <仓库地址>
-2. **安装依赖**  
-   ```bash
-   pip install -r requirements.txt
-3. **配置<code>config.py</code>**  
-修改<code>DEEPSEEK_API_URL</code>和<code>DEEPSEEK_API_KEY</code>。
-按需调整<code>MAX_TOKEN</code>、<code>TEMPERATURE</code>和<code>MODEL</code>。
-4. 运行<code>bot.py</code>
-   ```bash
-   python bot.py
-### 3. 如何使用
-1. **项目运行后，根目录下会生成 <code>QR.png</code>。**
-   - 使用您想作为 bot 的微信号扫码登录。
-   - 如果控制台没有响应，请重启项目以刷新二维码并重新登录。
-2. **当控制台提示 <code>Start auto replying.</code> 时，表示程序已成功运行。您可以在微信上与 bot 对话测试效果。**
-## 如果您想修改prompt
-- 项目根目录下的 <code>prompt.md</code> 可以编辑，修改后重启项目生效。
-- 注意：请不要修改与反斜线 <code> \ </code>相关的 prompt，因为它们被用于分段回复消息。
-## 赞助
-此项目欢迎赞助。您的支持对我非常重要！
-- 赞助用户如需远程部署或定制 prompt，请联系我。
-- E-Mail: yangchenglin2004@foxmail.com 
-- Bilibili: [umaru今天吃什么](https://space.bilibili.com/209397245)
-- 感谢您的支持与使用！!<br>
-![qrcode.jpg](img%2Fqrcode.jpg)
+参考 [FloraBot官方文档](https://florabotteam.github.io/)
