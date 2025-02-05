@@ -50,7 +50,7 @@ def deepseek(msgs: list):
         response.raise_for_status()
         return response.json().get("choices")[0].get("message")
     except requests.exceptions.HTTPError as error:
-        return f"Api异常\n状态码: {error.response.status_code}\n响应内容: {error.response.json()}"
+        return f"Api异常\n状态码: {error.response.status_code}\n响应内容: {json.dumps(error.response.json(), ensure_ascii=False, indent=4)}"
     except requests.exceptions.RequestException as error:
         return f"请求异常\n详细信息: {error}"
     pass
@@ -99,7 +99,10 @@ def event(data: dict):  # 事件函数,FloraBot每收到一个事件都会调用
                         if get_mid is not None:
                             # noinspection PyUnresolvedReferences
                             call_api(send_type, "delete_msg", {"message_id": get_mid.get("data").get("message_id")}, ws_client, ws_server, send_host, send_port)
-                        send_msg(send_type, ds_msg.get("content"), uid, gid, mid, ws_client, ws_server, send_host, send_port)
+                        for a_msg in ds_msg.get("content").split(r"${\}"):
+                            if a_msg == "" and a_msg.isspace():
+                                continue
+                            send_msg(send_type, a_msg, uid, gid, mid, ws_client, ws_server, send_host, send_port)
                         with open(f"{flora_api.get('ThePluginPath')}/AtriHistoryMessages.json", "w", encoding="UTF-8") as open_history_msgs:
                             open_history_msgs.write(json.dumps(atri_history_msgs, ensure_ascii=False))
         elif msg == "/Atri新的会话":
